@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaLock, FaCreditCard, FaShieldAlt } from 'react-icons/fa';
-import { Elements } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
+// We're not using Stripe Elements functionality yet, but leaving this commented
+// import { Elements } from '@stripe/react-stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 
 // Mock Stripe promise (in a real app, you would use your publishable key)
-const stripePromise = loadStripe('pk_test_mockStripePublishableKey');
+// const stripePromise = loadStripe('pk_test_mockStripePublishableKey');
 
 const CheckoutPage = () => {
   // Form state

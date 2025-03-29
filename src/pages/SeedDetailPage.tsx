@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { FaSeedling, FaLeaf, FaShoppingCart, FaArrowLeft, FaStar } from 'react-icons/fa';
+import { FaSeedling, FaShoppingCart, FaArrowLeft, FaStar } from 'react-icons/fa';
 
 const SeedDetailPage = () => {
   const { id } = useParams<{ id: string }>();

@@ -32,10 +32,10 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="md:w-2/3">
-              <h3 className="text-xl font-bold mb-2">Dr. Sarah Thompson</h3>
+              <h3 className="text-xl font-bold mb-2">J. Ryan Elmquist</h3>
               <p className="text-gray-600 mb-1">Head Grower & Geneticist</p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                With over 15 years of experience in botany and cannabis cultivation, Dr. Thompson 
+                With over 15 years of experience in botany and cannabis cultivation, Mr. Elmquist 
                 leads our seed selection and breeding program. She holds a Ph.D. in Plant Genetics 
                 from the University of California and has been at the forefront of cannabis breeding 
                 for over a decade.
