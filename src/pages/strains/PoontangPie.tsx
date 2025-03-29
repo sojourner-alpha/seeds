@@ -16,10 +16,9 @@ const PoontangPie = () => {
   const seed = {
     id: 1,
     name: 'Poontang Pie',
-    image: '/seeds/poontang-pie.jpg',
+    image: '/images/strains/poontang-pie.jpg',
     price: 99.99,
     category: 'Hybrid',
-    thc: '28-32%',
     seedCount: 6,
     rating: 4.9,
     reviewCount: 86,
@@ -27,7 +26,6 @@ const PoontangPie = () => {
     effects: ['Euphoric', 'Relaxed', 'Creative', 'Uplifted'],
     medicalUses: ['Stress', 'Pain', 'Anxiety', 'Depression'],
     flavorProfile: ['Sweet', 'Earthy', 'Complex'],
-    growingDifficulty: 'Intermediate',
     floweringTime: '9-10 weeks',
     yield: 'High',
     height: 'Medium to Tall',
@@ -80,8 +78,6 @@ const PoontangPie = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Details</h3>
               <ul className="space-y-2 text-gray-700">
-                <li><span className="font-medium">THC:</span> {seed.thc}</li>
-                <li><span className="font-medium">Difficulty:</span> {seed.growingDifficulty}</li>
                 <li><span className="font-medium">Flowering Time:</span> {seed.floweringTime}</li>
                 <li><span className="font-medium">Yield:</span> {seed.yield}</li>
               </ul>

@@ -24,11 +24,12 @@ const AboutPage = () => {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3">
-              {/* Placeholder for grower image */}
-              <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+              <div className="h-64 bg-gray-200 rounded-lg overflow-hidden">
+                <img 
+                  src="/images/about/ryan-elmquist.jpg" 
+                  alt="Ryan Elmquist" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="md:w-2/3">
