@@ -10,11 +10,11 @@ import CheckoutPage from './pages/CheckoutPage';
 import Layout from './components/layout/Layout';
 
 function App() {
-  // We'll add this back before deploying to GitHub Pages
-  // const basename = import.meta.env.DEV ? '/' : '/elmseeds/';
+  // Use the correct basename for GitHub Pages
+  const basename = import.meta.env.DEV ? '/' : '/seeds/';
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
