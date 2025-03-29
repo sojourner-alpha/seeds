@@ -2,11 +2,11 @@ import { FaSeedling, FaLeaf, FaFlask } from 'react-icons/fa';
 
 const AboutPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">About ElmSeeds</h1>
+    <div className="container mx-auto px-4 py-6 sm:py-8">
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">About ElmSeeds</h1>
       
       {/* Mission Statement */}
-      <section className="mb-12">
+      <section className="mb-8 sm:mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <p className="text-gray-700 leading-relaxed">
@@ -19,12 +19,12 @@ const AboutPage = () => {
       </section>
       
       {/* Updated About the Head Grower Section */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Meet Our Head Grower</h2>
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/3">
-              <div className="h-64 bg-gray-200 rounded-lg overflow-hidden">
+      <section className="mb-8 sm:mb-12">
+        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Meet Our Head Grower</h2>
+        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+          <div className="flex flex-col md:flex-row gap-6 sm:gap-8">
+            <div className="w-full md:w-1/3">
+              <div className="h-48 sm:h-64 bg-gray-200 rounded-lg overflow-hidden">
                 <img 
                   src="/images/about/ryan-elmquist.jpg" 
                   alt="Ryan Elmquist" 
@@ -57,16 +57,16 @@ const AboutPage = () => {
       </section>
       
       {/* Our Approach Section - Updated with real experience */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Our Approach to Genetics</h2>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+      <section className="mb-8 sm:mb-12">
+        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Our Approach to Genetics</h2>
+        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
           <p className="text-gray-700 leading-relaxed mb-6">
             Drawing from extensive commercial cultivation experience and a deep understanding of cannabis genetics, 
             our breeding program combines traditional techniques with modern cultivation practices. Our approach is 
             built on real-world experience in both large-scale operations and specialized genetic work.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="border border-gray-200 rounded-lg p-4">
               <div className="flex items-center mb-3">
                 <FaSeedling className="text-green-600 text-2xl mr-3" />

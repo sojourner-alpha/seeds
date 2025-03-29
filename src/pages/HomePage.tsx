@@ -35,16 +35,16 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative bg-green-900 text-white">
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/90 to-green-800/80"></div>
-        <div className="container mx-auto px-4 py-20 lg:py-32 relative z-10">
+        <div className="container mx-auto px-4 py-12 lg:py-32 relative z-10">
           <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
               Premium Cannabis Seeds Collection
             </h1>
-            <p className="text-xl text-gray-200 mb-8">
+            <p className="text-lg sm:text-xl text-gray-200 mb-6">
               Discover our hand-selected cannabis seeds for your collection. 
               Premium genetics with exceptional quality.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link 
                 to="/seeds" 
                 className="px-6 py-3 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-600 transition-colors text-center"
@@ -67,16 +67,16 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Featured Seeds</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {featuredSeeds.map((seed) => (
               <div key={seed.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <div className="h-64 bg-gray-200">
+                <div className="h-48 sm:h-64 bg-gray-200">
                   {/* Placeholder for seed image */}
                   <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-400">
                     <FaSeedling size={48} />
                   </div>
                 </div>
-                <div className="p-5">
+                <div className="p-4 sm:p-5">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-semibold">{seed.name}</h3>
                     <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">

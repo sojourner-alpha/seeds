@@ -33,24 +33,24 @@ const PoontangPie = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Link to="/seeds" className="flex items-center text-green-800 hover:text-green-600 mb-6">
+    <div className="container mx-auto px-4 py-6 sm:py-8">
+      <Link to="/seeds" className="flex items-center text-green-800 hover:text-green-600 mb-4 sm:mb-6">
         <FaArrowLeft className="mr-2" /> Back to Seeds
       </Link>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {/* Seed Image */}
-        <div className="bg-white p-4 rounded-lg border border-gray-200">
-          <div className="h-80 lg:h-96 w-full bg-gray-100 rounded flex items-center justify-center">
+        <div className="bg-white p-3 sm:p-4 rounded-lg border border-gray-200">
+          <div className="h-64 sm:h-80 lg:h-96 w-full bg-gray-100 rounded flex items-center justify-center">
             <FaSeedling size={96} className="text-gray-300" />
           </div>
         </div>
 
         {/* Seed Info */}
         <div>
-          <div className="flex justify-between items-start">
-            <h1 className="text-3xl font-bold">{seed.name}</h1>
-            <span className="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0">
+            <h1 className="text-2xl sm:text-3xl font-bold">{seed.name}</h1>
+            <span className="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded self-start">
               {seed.category}
             </span>
           </div>
@@ -74,7 +74,7 @@ const PoontangPie = () => {
             <p className="text-gray-700">{seed.description}</p>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-4">
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <h3 className="text-lg font-semibold mb-2">Details</h3>
               <ul className="space-y-2 text-gray-700">
@@ -103,7 +103,7 @@ const PoontangPie = () => {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <div className="w-full sm:w-1/3">
               <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">
                 Quantity
@@ -124,10 +124,10 @@ const PoontangPie = () => {
             
             <button
               onClick={addToCart}
-              className="flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white py-3 px-6 rounded-md font-medium transition-colors w-full sm:w-2/3"
+              className="flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white py-3 px-4 sm:px-6 rounded-md font-medium transition-colors w-full sm:w-2/3"
             >
               <FaShoppingCart className="mr-2" />
-              Add to Cart - ${(seed.price * quantity).toFixed(2)}
+              <span className="text-sm sm:text-base">Add to Cart - ${(seed.price * quantity).toFixed(2)}</span>
             </button>
           </div>
         </div>
