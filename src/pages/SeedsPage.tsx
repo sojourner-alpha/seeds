@@ -4,7 +4,7 @@ import { FaSeedling, FaFilter } from 'react-icons/fa';
 
 const SeedsPage = () => {
   // Mock seed categories
-  const categories = ['All', 'Indica', 'Sativa', 'Hybrid', 'CBD', 'Autoflower'];
+  const categories = ['All', 'Indica', 'Sativa', 'Hybrid', 'Limited Edition'];
   
   // State for active category filter
   const [activeCategory, setActiveCategory] = useState('All');
@@ -13,85 +13,30 @@ const SeedsPage = () => {
   const seeds = [
     {
       id: 1,
-      name: 'Northern Lights',
-      image: '/seeds/northern-lights.jpg',
-      price: 49.99,
-      category: 'Indica',
-      thc: '18-20%',
-      seedCount: 10,
+      name: 'Poontang Pie',
+      image: '/seeds/poontang-pie.jpg',
+      price: 99.99,
+      category: 'Hybrid',
+      thc: '28-32%',
+      seedCount: 6,
     },
     {
       id: 2,
-      name: 'Blue Dream',
-      image: '/seeds/blue-dream.jpg',
-      price: 59.99,
-      category: 'Hybrid',
-      thc: '17-24%',
-      seedCount: 5,
+      name: 'Resting Bitch Face',
+      image: '/seeds/resting-bitch-face.jpg',
+      price: 89.99,
+      category: 'Indica',
+      thc: '25-29%',
+      seedCount: 6,
     },
     {
       id: 3,
-      name: 'Sour Diesel',
-      image: '/seeds/sour-diesel.jpg',
-      price: 54.99,
-      category: 'Sativa',
-      thc: '19-25%',
-      seedCount: 10,
-    },
-    {
-      id: 4,
-      name: 'Girl Scout Cookies',
-      image: '/seeds/gsc.jpg',
-      price: 64.99,
+      name: 'Wilson Zero',
+      image: '/seeds/wilson-zero.jpg',
+      price: 94.99,
       category: 'Hybrid',
-      thc: '25-28%',
-      seedCount: 5,
-    },
-    {
-      id: 5,
-      name: 'OG Kush',
-      image: '/seeds/og-kush.jpg',
-      price: 59.99,
-      category: 'Hybrid',
-      thc: '20-25%',
-      seedCount: 10,
-    },
-    {
-      id: 6,
-      name: 'CBD Critical',
-      image: '/seeds/cbd-critical.jpg',
-      price: 49.99,
-      category: 'CBD',
-      thc: '5-7%',
-      cbd: '15-18%',
-      seedCount: 5,
-    },
-    {
-      id: 7,
-      name: 'White Widow',
-      image: '/seeds/white-widow.jpg',
-      price: 44.99,
-      category: 'Hybrid',
-      thc: '19-22%',
-      seedCount: 10,
-    },
-    {
-      id: 8,
-      name: 'Durban Poison',
-      image: '/seeds/durban-poison.jpg',
-      price: 54.99,
-      category: 'Sativa',
-      thc: '20-25%',
-      seedCount: 5,
-    },
-    {
-      id: 9,
-      name: 'Purple Punch Auto',
-      image: '/seeds/purple-punch.jpg',
-      price: 64.99,
-      category: 'Autoflower',
-      thc: '18-20%',
-      seedCount: 3,
+      thc: '26-30%',
+      seedCount: 6,
     },
   ];
 
@@ -149,7 +94,7 @@ const SeedsPage = () => {
               <div className="flex justify-between items-center mt-4">
                 <span className="text-lg font-bold">${seed.price}</span>
                 <Link
-                  to={`/seeds/${seed.id}`}
+                  to={`/seeds/${seed.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="text-amber-500 hover:text-amber-600 font-medium text-sm"
                 >
                   View Details

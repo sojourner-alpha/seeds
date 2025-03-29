@@ -8,6 +8,9 @@ import ArticlePage from './pages/ArticlePage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import Layout from './components/layout/Layout';
+import PoontangPie from './pages/strains/PoontangPie';
+import RestingBitchFace from './pages/strains/RestingBitchFace';
+import WilsonZero from './pages/strains/WilsonZero';
 
 function App() {
   // Use the correct basename for GitHub Pages
@@ -19,7 +22,14 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="seeds" element={<SeedsPage />} />
-          <Route path="seeds/:id" element={<SeedDetailPage />} />
+          {/* Remove or comment out the generic seed detail route */}
+          {/* <Route path="seeds/:id" element={<SeedDetailPage />} /> */}
+          
+          {/* Add specific strain routes */}
+          <Route path="seeds/poontang-pie" element={<PoontangPie />} />
+          <Route path="seeds/resting-bitch-face" element={<RestingBitchFace />} />
+          <Route path="seeds/wilson-zero" element={<WilsonZero />} />
+          
           <Route path="about" element={<AboutPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:id" element={<ArticlePage />} />

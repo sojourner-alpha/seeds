@@ -18,7 +18,7 @@ const AboutPage = () => {
         </div>
       </section>
       
-      {/* About the Head Grower */}
+      {/* Updated About the Head Grower Section */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Meet Our Head Grower</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
@@ -32,32 +32,37 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="md:w-2/3">
-              <h3 className="text-xl font-bold mb-2">J. Ryan Elmquist</h3>
-              <p className="text-gray-600 mb-1">Head Grower & Geneticist</p>
+              <h3 className="text-xl font-bold mb-2">Ryan Elmquist</h3>
+              <p className="text-gray-600 mb-1">Head Grower & Genetics Specialist</p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                With over 15 years of experience in botany and cannabis cultivation, Mr. Elmquist 
-                leads our seed selection and breeding program. She holds a Ph.D. in Plant Genetics 
-                from the University of California and has been at the forefront of cannabis breeding 
-                for over a decade.
+                With over a decade of hands-on experience in cannabis cultivation, Ryan has mastered growing 
+                in diverse environments including indoor, outdoor, and greenhouse settings. His expertise spans 
+                from large-scale commercial operations to specialized genetic preservation projects.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                As a former Vegetative and Genetics Manager at a large-scale cannabis operation, Ryan oversaw 
+                nursery operations, mother plant health, and genetic selection. He managed extensive cultivation 
+                spaces, including 4,000sqft of flowering rooms with regular 1500+ plant cycles.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                "My passion is exploring the rich genetic diversity of cannabis and working to 
-                preserve rare landraces while developing new varieties with exceptional characteristics. 
-                At ElmSeeds, we're not just selling seeds – we're preserving genetic heritage and 
-                pushing the boundaries of what's possible through careful breeding."
+                Ryan has also successfully operated his own hemp cultivation business and worked as a lead 
+                propagator at a large hemp operation, where he managed clone production reaching 
+                150,000 clones per season. His diverse experience and dedication to genetic preservation make him 
+                the ideal curator for our seed bank.
               </p>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Our Approach */}
+      {/* Our Approach Section - Updated with real experience */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Approach to Genetics</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <p className="text-gray-700 leading-relaxed mb-6">
-            At ElmSeeds, we approach cannabis genetics with scientific rigor and a deep 
-            appreciation for the plant's natural diversity. Our breeding program focuses on:
+            Drawing from extensive commercial cultivation experience and a deep understanding of cannabis genetics, 
+            our breeding program combines traditional techniques with modern cultivation practices. Our approach is 
+            built on real-world experience in both large-scale operations and specialized genetic work.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -67,33 +72,30 @@ const AboutPage = () => {
                 <h3 className="text-lg font-semibold">Genetic Preservation</h3>
               </div>
               <p className="text-gray-700">
-                We work diligently to collect, preserve, and propagate rare and 
-                heirloom cannabis varieties, preventing genetic erosion and maintaining 
-                the plant's rich natural diversity.
+                Through years of collecting and working with diverse cannabis varieties, we've developed 
+                a robust preservation program to maintain the integrity of both classic and rare genetics.
               </p>
             </div>
             
             <div className="border border-gray-200 rounded-lg p-4">
               <div className="flex items-center mb-3">
                 <FaFlask className="text-green-600 text-2xl mr-3" />
-                <h3 className="text-lg font-semibold">Selective Breeding</h3>
+                <h3 className="text-lg font-semibold">Proven Methods</h3>
               </div>
               <p className="text-gray-700">
-                Our breeding projects are carefully designed to enhance desirable traits 
-                while maintaining genetic stability. We extensively test each generation 
-                for consistency and quality.
+                Our cultivation techniques are refined through years of commercial experience across indoor, 
+                outdoor, and greenhouse environments, ensuring consistent, high-quality results.
               </p>
             </div>
             
             <div className="border border-gray-200 rounded-lg p-4">
               <div className="flex items-center mb-3">
                 <FaLeaf className="text-green-600 text-2xl mr-3" />
-                <h3 className="text-lg font-semibold">Sustainable Practices</h3>
+                <h3 className="text-lg font-semibold">Diverse Experience</h3>
               </div>
               <p className="text-gray-700">
-                We employ organic and sustainable cultivation methods throughout our 
-                breeding process, ensuring our seeds are developed in harmony with 
-                nature and free from harmful chemicals.
+                From managing large-scale operations to specialized breeding projects, our comprehensive 
+                experience ensures we understand every aspect of cannabis cultivation and genetics.
               </p>
             </div>
           </div>

@@ -6,27 +6,27 @@ const HomePage = () => {
   const featuredSeeds = [
     {
       id: 1,
-      name: 'Northern Lights',
-      image: '/seeds/northern-lights.jpg',
-      price: 49.99,
-      category: 'Indica',
-      thc: '18-20%',
+      name: 'Poontang Pie',
+      image: '/seeds/poontang-pie.jpg',
+      price: 99.99,
+      category: 'Hybrid',
+      thc: '28-32%',
     },
     {
       id: 2,
-      name: 'Blue Dream',
-      image: '/seeds/blue-dream.jpg',
-      price: 59.99,
-      category: 'Hybrid',
-      thc: '17-24%',
+      name: 'Resting Bitch Face',
+      image: '/seeds/resting-bitch-face.jpg',
+      price: 89.99,
+      category: 'Indica',
+      thc: '25-29%',
     },
     {
       id: 3,
-      name: 'Sour Diesel',
-      image: '/seeds/sour-diesel.jpg',
-      price: 54.99,
-      category: 'Sativa',
-      thc: '19-25%',
+      name: 'Wilson Zero',
+      image: '/seeds/wilson-zero.jpg',
+      price: 94.99,
+      category: 'Hybrid',
+      thc: '26-30%',
     },
   ];
 
@@ -87,7 +87,7 @@ const HomePage = () => {
                   <div className="flex justify-between items-center">
                     <span className="text-xl font-bold">${seed.price}</span>
                     <Link
-                      to={`/seeds/${seed.id}`}
+                      to={`/seeds/${seed.name.toLowerCase().replace(/\s+/g, '-')}`}
                       className="text-amber-500 hover:text-amber-600 font-medium"
                     >
                       View Details
