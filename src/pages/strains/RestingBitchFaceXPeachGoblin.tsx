@@ -12,7 +12,7 @@ const strain = {
     This variety combines the powerful effects of RBF X with the unique peach terps of Goblin, creating 
     a collector's item that offers both potency and flavor.`,
   effects: ['Relaxed', 'Euphoric', 'Pain Relief', 'Sleepy'],
-  flavorProfile: ['Peach', 'Sweet', 'Earthy'],
+  flavorProfile: ['Peach', 'Sweet', 'Gassy'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

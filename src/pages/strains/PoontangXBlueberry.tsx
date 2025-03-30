@@ -12,7 +12,7 @@ const strain = {
     This variety offers collectors a unique blend of modern potency and classic berry flavors, creating 
     a truly memorable addition to any collection.`,
   effects: ['Relaxed', 'Happy', 'Euphoric', 'Sleepy'],
-  flavorProfile: ['Blueberry', 'Sweet', 'Berry'],
+  flavorProfile: ['Blueberry', 'Complex', 'Funky'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'Medium to High',

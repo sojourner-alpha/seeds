@@ -12,7 +12,7 @@ const strain = {
     This variety offers collectors a unique blend of sweet and fizzy terpenes, creating a truly distinctive 
     addition to the Poontang X family.`,
   effects: ['Euphoric', 'Creative', 'Uplifted', 'Social'],
-  flavorProfile: ['Sweet', 'Candy', 'Citrus'],
+  flavorProfile: ['Sweet', 'CaComplexndy', 'Funky'],
   growingDifficulty: 'Moderate',
   floweringTime: '9-10 weeks',
   yield: 'Medium to High',

@@ -12,7 +12,7 @@ const strain = {
     This variety combines the strength of Wilson Zero X with the sweet, peachy notes of Peach Smash, 
     creating a unique collector's item with a delightful terpene profile.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
-  flavorProfile: ['Peach', 'Sweet', 'Earthy'],
+  flavorProfile: ['Peach', 'Sweet', 'Banana'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

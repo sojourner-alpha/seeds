@@ -12,7 +12,7 @@ const strain = {
     This variety brings together complex berry notes with the potent characteristics of Poontang X, creating 
     a unique collector's item with an impressive terpene profile.`,
   effects: ['Relaxed', 'Creative', 'Happy', 'Focused'],
-  flavorProfile: ['Berry', 'Sweet', 'Complex'],
+  flavorProfile: ['Funky', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

@@ -12,7 +12,7 @@ const strain = {
     This variety combines the exceptional potency of Wilson Zero X with the unique peach terps of 
     Goblin, creating a collector's item that showcases the best of both parent strains.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
-  flavorProfile: ['Peach', 'Sweet', 'Earthy'],
+  flavorProfile: ['Peach', 'Sweet', 'Banana'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

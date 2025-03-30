@@ -20,38 +20,28 @@ const AboutPage = () => {
       
       {/* Updated About the Head Grower Section */}
       <section className="mb-8 sm:mb-12">
-        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Meet Our Head Grower</h2>
+        <h2 className="text-xl sm:text-2xl font-semibold mb-4">Meet Our Seedsman</h2>
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-          <div className="flex flex-col md:flex-row gap-6 sm:gap-8">
-            <div className="w-full md:w-1/3">
-              <div className="h-48 sm:h-64 bg-gray-200 rounded-lg overflow-hidden">
-                <img 
-                  src="/images/about/ryan-elmquist.jpg" 
-                  alt="Ryan Elmquist" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            <div className="md:w-2/3">
-              <h3 className="text-xl font-bold mb-2">Ryan Elmquist</h3>
-              <p className="text-gray-600 mb-1">Head Grower & Genetics Specialist</p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                With over a decade of hands-on experience in cannabis cultivation, Ryan has mastered growing 
-                in diverse environments including indoor, outdoor, and greenhouse settings. His expertise spans 
-                from large-scale commercial operations to specialized genetic preservation projects.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                As a former Vegetative and Genetics Manager at a large-scale cannabis operation, Ryan oversaw 
-                nursery operations, mother plant health, and genetic selection. He managed extensive cultivation 
-                spaces, including 4,000sqft of flowering rooms with regular 1500+ plant cycles.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Ryan has also successfully operated his own hemp cultivation business and worked as a lead 
-                propagator at a large hemp operation, where he managed clone production reaching 
-                150,000 clones per season. His diverse experience and dedication to genetic preservation make him 
-                the ideal curator for our seed bank.
-              </p>
-            </div>
+          <div>
+            <h3 className="text-xl font-bold mb-2">Muad'doob</h3>
+            <p className="text-gray-600 mb-1">Head Seedsman & Genetics Specialist</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              With over a decade of hands-on experience in cannabis cultivation, Doob has mastered growing 
+              in diverse environments including indoor, outdoor, and greenhouse settings. His expertise spans 
+              from large-scale commercial operations to specialized genetic preservation projects.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              As a former Vegetative and Genetics Manager at a large-scale cannabis operation, Doob oversaw 
+              nursery operations, mother plant health, and genetic selection. He managed extensive cultivation 
+              spaces, including 4,000sqft of flowering rooms with regular 1500+ plant cycles.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Doob has also successfully operated his own hemp cultivation business and worked as a lead 
+              propagator at a large hemp operation, where he managed clone production reaching 
+              150,000 clones per season. His diverse experience and dedication to genetic preservation make him 
+              the ideal curator for our seed bank. All of our seed offerings were hand selected by Doob himself. The
+              goal of this project is to preserve and share these unique genetics with everyone.
+            </p>
           </div>
         </div>
       </section>

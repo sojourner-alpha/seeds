@@ -12,7 +12,7 @@ const strain = {
     strain combines the potent effects of Poontang X with the unique peach terps of Goblin, creating a 
     collector's item that showcases the best of both parent strains.`,
   effects: ['Euphoric', 'Focused', 'Creative', 'Energetic'],
-  flavorProfile: ['Peach', 'Sweet', 'Tropical'],
+  flavorProfile: ['Complex', 'Funky', 'Tropical'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'Medium to High',

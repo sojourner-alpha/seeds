@@ -12,7 +12,7 @@ const strain = {
     Candy Jam line. This variety offers collectors a unique blend of RBF's powerful effects with sweet 
     and fizzy terpenes, creating a truly distinctive addition to the RBF X family.`,
   effects: ['Relaxed', 'Happy', 'Pain Relief', 'Euphoric'],
-  flavorProfile: ['Sweet', 'Candy', 'Complex'],
+  flavorProfile: ['Gassy', 'Candy', 'Complex'],
   growingDifficulty: 'Moderate to Advanced',
   floweringTime: '8-9 weeks',
   yield: 'High',

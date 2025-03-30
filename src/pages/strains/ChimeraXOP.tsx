@@ -12,10 +12,10 @@ const strain = {
     of this mythical strain. Each seed represents a unique expression of carefully selected Chimera X 
     parents, offering collectors a range of phenotypes to explore.`,
   effects: ['Energetic', 'Creative', 'Focused', 'Euphoric'],
-  flavorProfile: ['Pine', 'Citrus', 'Spicy'],
+  flavorProfile: ['Sweet', 'Citrus', 'Peachy'],
   growingDifficulty: 'Moderate to Advanced',
   floweringTime: '9-10 weeks',
-  yield: 'High',
+  yield: 'Medium',
   thc: '25-29%',
   origin: 'USA',
 };

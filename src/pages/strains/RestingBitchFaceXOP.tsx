@@ -12,7 +12,7 @@ const strain = {
     potential of this powerful indica. Each seed represents a unique expression of carefully selected 
     RBF X parents, offering collectors a range of phenotypes to explore.`,
   effects: ['Relaxed', 'Sleepy', 'Calm', 'Pain Relief'],
-  flavorProfile: ['Earthy', 'Kush', 'Sweet'],
+  flavorProfile: ['Gassy', 'Kush', 'Sweet'],
   growingDifficulty: 'Easy to Moderate',
   floweringTime: '7-8 weeks',
   yield: 'High',

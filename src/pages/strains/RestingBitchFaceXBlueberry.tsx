@@ -12,7 +12,7 @@ const strain = {
     This variety offers collectors a unique blend of RBF's potency with sweet berry flavors, creating 
     a truly memorable addition to any collection.`,
   effects: ['Relaxed', 'Sleepy', 'Happy', 'Pain Relief'],
-  flavorProfile: ['Blueberry', 'Sweet', 'Berry'],
+  flavorProfile: ['Berry', 'Sweet', 'Gassy'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'Medium to High',

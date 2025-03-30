@@ -12,6 +12,7 @@ interface StrainProps {
   bulkSeedCount?: number;
   availability: 'BULK' | 'LIMITED';
   description: string;
+  descriptionLink?: { url: string; text: string };
   effects: string[];
   flavorProfile: string[];
   growingDifficulty: string;
@@ -71,7 +72,19 @@ const StrainPage = ({ strain }: { strain: StrainProps }) => {
 
           <div className="mt-6">
             <h3 className="text-lg font-semibold mb-2">Description</h3>
-            <p className="text-gray-700">{strain.description}</p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              {strain.description}
+              {strain.descriptionLink && (
+                <a
+                  href={strain.descriptionLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-500 hover:text-amber-600 underline"
+                >
+                  {strain.descriptionLink.text}
+                </a>
+              )}
+            </p>
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-4">

@@ -12,7 +12,7 @@ const strain = {
     This variety brings together tropical cherry notes with complex berry flavors, creating a unique 
     collector's item with an impressive fruit-forward terpene profile.`,
   effects: ['Happy', 'Creative', 'Euphoric', 'Social'],
-  flavorProfile: ['Cherry', 'Berry', 'Tropical'],
+  flavorProfile: ['Cherry', 'Gassy', 'Tropical'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

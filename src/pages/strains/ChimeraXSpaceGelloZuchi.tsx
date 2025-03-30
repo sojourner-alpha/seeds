@@ -12,7 +12,7 @@ const strain = {
     This complex variety combines multiple premium genetics to create a truly unique collector's item 
     with an intricate terpene profile and exceptional characteristics.`,
   effects: ['Creative', 'Euphoric', 'Energetic', 'Focused'],
-  flavorProfile: ['Sweet', 'Tropical', 'Complex'],
+  flavorProfile: ['Sweet', 'Tropical', 'Peachy'],
   growingDifficulty: 'Advanced',
   floweringTime: '9-10 weeks',
   yield: 'Medium to High',

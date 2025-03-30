@@ -12,7 +12,7 @@ const strain = {
     This variety combines tropical cherry notes with sweet peach terps, creating a collector's item 
     with an exceptional fruit-forward profile.`,
   effects: ['Euphoric', 'Happy', 'Creative', 'Uplifted'],
-  flavorProfile: ['Tropical', 'Peach', 'Cherry'],
+  flavorProfile: ['Gassy', 'Peach', 'Cherry'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

@@ -12,7 +12,7 @@ const strain = {
     This variety offers collectors a unique blend of tropical cherry and sweet berry flavors, 
     creating a truly memorable addition to any collection.`,
   effects: ['Relaxed', 'Happy', 'Euphoric', 'Creative'],
-  flavorProfile: ['Cherry', 'Blueberry', 'Tropical'],
+  flavorProfile: ['Cherry', 'Gassy', 'Tropical'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'Medium to High',

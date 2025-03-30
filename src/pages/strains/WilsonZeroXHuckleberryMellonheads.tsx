@@ -12,7 +12,7 @@ const strain = {
     This limited edition variety brings together the potency of Wilson Zero X with sweet berry notes, 
     creating a unique collector's item with an impressive terpene profile.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Focused'],
-  flavorProfile: ['Berry', 'Sweet', 'Complex'],
+  flavorProfile: ['Banana', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

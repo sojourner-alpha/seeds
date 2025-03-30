@@ -12,7 +12,7 @@ const strain = {
     This variety combines the potency of Poontang X with the sweet, peachy notes of Peach Smash, creating 
     a unique collector's item with an impressive terpene profile.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
-  flavorProfile: ['Peach', 'Sweet', 'Fruity'],
+  flavorProfile: ['Complex', 'Funky', 'Fruity'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

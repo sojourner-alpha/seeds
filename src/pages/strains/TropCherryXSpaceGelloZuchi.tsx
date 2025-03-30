@@ -12,7 +12,7 @@ const strain = {
     This limited edition variety brings together multiple premium genetics, creating a unique collector's 
     item with an intricate tropical and sweet terpene profile.`,
   effects: ['Creative', 'Euphoric', 'Energetic', 'Focused'],
-  flavorProfile: ['Tropical', 'Sweet', 'Complex'],
+  flavorProfile: ['Gassy', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate to Advanced',
   floweringTime: '9-10 weeks',
   yield: 'High',

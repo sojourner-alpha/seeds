@@ -14,7 +14,7 @@ const strain = {
     of this tropical hybrid. Each seed represents a unique expression of carefully selected Trop Cherry X 
     parents, offering collectors a range of phenotypes with varying tropical and cherry characteristics.`,
   effects: ['Euphoric', 'Creative', 'Uplifted', 'Social'],
-  flavorProfile: ['Tropical', 'Cherry', 'Sweet'],
+  flavorProfile: ['Tropical', 'Cherry', 'Gassy'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

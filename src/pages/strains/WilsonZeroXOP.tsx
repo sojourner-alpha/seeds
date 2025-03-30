@@ -14,7 +14,7 @@ const strain = {
     this exceptional strain. Each seed represents a unique combination of traits from carefully selected 
     Wilson Zero X parents, perfect for collectors interested in exploring the strain's genetic diversity.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Focused'],
-  flavorProfile: ['Pine', 'Citrus', 'Earthy'],
+  flavorProfile: ['Banana', 'Citrus', 'Kush'],
   growingDifficulty: 'Easy to Moderate',
   floweringTime: '8-9 weeks',
   yield: 'High',

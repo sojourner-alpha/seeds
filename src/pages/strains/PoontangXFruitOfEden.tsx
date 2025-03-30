@@ -12,7 +12,7 @@ const strain = {
     offers collectors a unique combination of flavors and characteristics. The Fruit of Eden influence brings 
     an exotic fruit profile to the already impressive Poontang X line.`,
   effects: ['Uplifted', 'Creative', 'Euphoric', 'Focused'],
-  flavorProfile: ['Tropical', 'Sweet', 'Fruity'],
+  flavorProfile: ['Complex', 'Funky', 'Fruity'],
   growingDifficulty: 'Moderate',
   floweringTime: '8-9 weeks',
   yield: 'Medium to High',
