@@ -3,14 +3,14 @@ import { FaSeedling, FaLeaf, FaFlask } from 'react-icons/fa';
 const AboutPage = () => {
   return (
     <div className="container mx-auto px-4 py-6 sm:py-8">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">About ElmSeeds</h1>
+      <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">About Colorado Cannabis Seeds</h1>
       
       {/* Mission Statement */}
       <section className="mb-8 sm:mb-12">
         <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <p className="text-gray-700 leading-relaxed">
-            At ElmSeeds, our mission is to provide collectors with access to the highest quality cannabis seeds. 
+            At Colorado Cannabis Seeds, our mission is to provide collectors with access to the highest quality cannabis seeds. 
             We believe in preserving exceptional genetics and promoting biodiversity in cannabis. 
             Our team is passionate about the plant's potential and dedicated to offering premium seeds 
             with genetic stability, consistent results, and unique characteristics.
@@ -108,7 +108,7 @@ const AboutPage = () => {
         <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <p className="text-gray-700 leading-relaxed mb-4">
-            ElmSeeds was founded in 2018 by a collective of passionate cannabis researchers, 
+            Colorado Cannabis Seeds was founded in 2018 by a collective of passionate cannabis researchers, 
             botanists, and cultivators united by a shared vision: to create a seed bank that 
             prioritizes genetic preservation, quality, and innovation.
           </p>

@@ -4,30 +4,65 @@ import { FaSeedling, FaLeaf, FaFlask } from 'react-icons/fa';
 const HomePage = () => {
   // Mock featured seeds data
   const featuredSeeds = [
+    // Bulk Seeds
     {
       id: 1,
-      name: 'Poontang Pie',
-      image: '/seeds/poontang-pie.jpg',
-      price: 99.99,
+      name: 'Poontang X (Open Pollination)',
+      image: '/images/strains/poontang-x-op.jpg',
+      price: 20,
+      bulkPrice: 80,
       category: 'Hybrid',
-      thc: '28-32%',
+      thc: '24-28%',
+      availability: 'BULK'
     },
     {
-      id: 2,
-      name: 'Resting Bitch Face',
-      image: '/seeds/resting-bitch-face.jpg',
-      price: 89.99,
-      category: 'Indica',
-      thc: '25-29%',
-    },
-    {
-      id: 3,
-      name: 'Wilson Zero',
-      image: '/seeds/wilson-zero.jpg',
-      price: 94.99,
+      id: 11,
+      name: 'Wilson Zero X (Open Pollination)',
+      image: '/images/strains/wilson-zero-x-op.jpg',
+      price: 20,
+      bulkPrice: 80,
       category: 'Hybrid',
       thc: '26-30%',
+      availability: 'BULK'
     },
+    {
+      id: 19,
+      name: 'Trop Cherry X (Open Pollination)',
+      image: '/images/strains/trop-cherry-x-op.jpg',
+      price: 20,
+      bulkPrice: 80,
+      category: 'Hybrid',
+      thc: '24-28%',
+      availability: 'BULK'
+    },
+    // Limited Edition Seeds
+    {
+      id: 15,
+      name: 'Resting Bitch Face X (Open Pollination)',
+      image: '/images/strains/rbf-x-op.jpg',
+      price: 30,
+      category: 'Indica',
+      thc: '24-28%',
+      availability: 'LIMITED'
+    },
+    {
+      id: 20,
+      name: 'Trop Cherry X (Space Gello x Zuchi)',
+      image: '/images/strains/trop-cherry-x-space-gello-zuchi.jpg',
+      price: 30,
+      category: 'Hybrid',
+      thc: '25-29%',
+      availability: 'LIMITED'
+    },
+    {
+      id: 6,
+      name: 'Poontang X (Space Gello x Zuchi)',
+      image: '/images/strains/poontang-x-space-gello-zuchi.jpg',
+      price: 30,
+      category: 'Hybrid',
+      thc: '26-30%',
+      availability: 'LIMITED'
+    }
   ];
 
   return (
@@ -38,7 +73,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4 py-12 lg:py-32 relative z-10">
           <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Premium Cannabis Seeds Collection
+              Colorado Cannabis Seeds Collection
             </h1>
             <p className="text-lg sm:text-xl text-gray-200 mb-6">
               Discover our hand-selected cannabis seeds for your collection. 
@@ -79,15 +114,32 @@ const HomePage = () => {
                 <div className="p-4 sm:p-5">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-semibold">{seed.name}</h3>
-                    <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                      {seed.category}
+                    <span className={`text-xs font-medium px-2.5 py-0.5 rounded ${
+                      seed.availability === 'BULK' 
+                        ? 'bg-blue-100 text-blue-800'
+                        : 'bg-amber-100 text-amber-800'
+                    }`}>
+                      {seed.availability}
                     </span>
                   </div>
                   <p className="text-gray-600 mb-4">THC: {seed.thc}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold">${seed.price}</span>
+                    <div className="flex flex-col">
+                      {seed.availability === 'BULK' ? (
+                        <>
+                          <span className="text-lg font-bold">From ${seed.price}</span>
+                          <span className="text-sm text-gray-600">Bulk: ${seed.bulkPrice}/50 seeds</span>
+                        </>
+                      ) : (
+                        <span className="text-lg font-bold">${seed.price}</span>
+                      )}
+                    </div>
                     <Link
-                      to={`/seeds/${seed.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      to={`/seeds/${seed.name.toLowerCase()
+                        .replace(/\s+x\s+/g, '-x-')
+                        .replace(/[()]/g, '')
+                        .replace(/\s+/g, '-')
+                        .replace(/--/g, '-')}`}
                       className="text-amber-500 hover:text-amber-600 font-medium"
                     >
                       View Details
@@ -112,7 +164,7 @@ const HomePage = () => {
       {/* Features */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose ElmSeeds</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Colorado Cannabis Seeds</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -128,7 +180,7 @@ const HomePage = () => {
                 <FaLeaf size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Diverse Selection</h3>
-              <p className="text-gray-600">We offer a wide range of indica, sativa, and hybrid varieties for all preferences.</p>
+              <p className="text-gray-600">We offer a wide range of varieties for all preferences.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -136,7 +188,7 @@ const HomePage = () => {
                 <FaFlask size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2">Lab Tested</h3>
-              <p className="text-gray-600">All our seeds are laboratory tested for quality, viability, and consistency.</p>
+              <p className="text-gray-600">Our seeds are laboratory tested for quality, viability, and consistency.</p>
             </div>
           </div>
         </div>

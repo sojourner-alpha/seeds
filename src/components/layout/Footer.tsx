@@ -61,8 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
-          &copy; {currentYear} ElmSeeds. All seeds are sold as novelty collectible items. 
-          Not for germination where prohibited by law.
+          &copy; {currentYear} Colorado Cannabis Seeds. All rights reserved.
         </div>
       </div>
     </footer>

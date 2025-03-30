@@ -7,7 +7,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <FaSeedling className="text-2xl text-green-400" />
-          <Link to="/" className="text-xl font-bold tracking-wider">ElmSeeds</Link>
+          <Link to="/" className="text-xl font-bold">
+            Colorado Cannabis Seeds
+          </Link>
         </div>
         
         <nav className="hidden md:flex space-x-8">
