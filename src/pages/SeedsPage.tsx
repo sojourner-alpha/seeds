@@ -313,7 +313,13 @@ const SeedsPage = () => {
                   )}
                 </span>
                 <Link
-                  to={`/seeds/${seed.name.toLowerCase().replace(/[()]/g, '').replace(/\s+/g, '-')}`}
+                  to={`/seeds/${seed.name.toLowerCase()
+                    .replace(/\s+x\s+/g, '-x-')  // Replace " X " with "-x-"
+                    .replace(/[()]/g, '')        // Remove parentheses
+                    .replace(/\s+x\s+/g, '-x-')  // Handle any remaining "x" with spaces
+                    .replace(/\s+/g, '-')        // Replace remaining spaces with dashes
+                    .replace(/-x-/g, '-x-')      // Normalize x separators
+                    .replace(/--/g, '-')}`}      // Clean up any double dashes
                   className="text-amber-500 hover:text-amber-600 font-medium text-sm"
                 >
                   View Details
