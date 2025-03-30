@@ -24,31 +24,28 @@ interface StrainDetailProps {
 
 const StrainDetailTemplate = ({ strain }: StrainDetailProps) => {
   const [quantity, setQuantity] = useState(1);
-  const [selectedPackSize, setSelectedPackSize] = useState<'regular' | 'bulk'>(
-    'regular'
-  );
-  
+  const [isBulkOrder, setIsBulkOrder] = useState(false);
   const maxOrder = strain.availability === 'BULK' ? 300 : 20;
-
+  
   const handleQuantityChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setQuantity(parseInt(e.target.value));
   };
 
-  const handlePackSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedPackSize(e.target.value as 'regular' | 'bulk');
-    setQuantity(1); // Reset quantity when changing pack size
+  const handlePackTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setIsBulkOrder(e.target.value === 'bulk');
+    setQuantity(1); // Reset quantity when changing pack type
   };
 
   const getCurrentPrice = () => {
-    if (strain.availability === 'BULK' && selectedPackSize === 'bulk') {
-      return strain.bulkPrice! * quantity;
+    if (isBulkOrder && strain.bulkPrice) {
+      return strain.bulkPrice * quantity;
     }
     return strain.price * quantity;
   };
 
   const getCurrentSeedCount = () => {
-    if (strain.availability === 'BULK' && selectedPackSize === 'bulk') {
-      return strain.bulkSeedCount! * quantity;
+    if (isBulkOrder && strain.bulkSeedCount) {
+      return strain.bulkSeedCount * quantity;
     }
     return strain.seedCount * quantity;
   };
@@ -85,8 +82,29 @@ const StrainDetailTemplate = ({ strain }: StrainDetailProps) => {
           </div>
 
           <div className="mt-4">
-            <span className="text-2xl font-bold">${getCurrentPrice()}</span>
-            <span className="text-gray-600 ml-2">({getCurrentSeedCount()} seeds)</span>
+            {strain.availability === 'BULK' && (
+              <div className="mb-4">
+                <label htmlFor="packType" className="block text-sm font-medium text-gray-700 mb-1">
+                  Pack Size
+                </label>
+                <select
+                  id="packType"
+                  value={isBulkOrder ? 'bulk' : 'regular'}
+                  onChange={handlePackTypeChange}
+                  className="border border-gray-300 rounded-md py-2 px-4 w-full sm:w-1/2 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                >
+                  <option value="regular">Regular Pack (10 seeds - $20)</option>
+                  <option value="bulk">Bulk Pack (50 seeds - $80)</option>
+                </select>
+              </div>
+            )}
+
+            <div className="flex items-center">
+              <span className="text-2xl font-bold">${getCurrentPrice()}</span>
+              <span className="text-gray-600 ml-2">
+                (Total: {getCurrentSeedCount()} seeds)
+              </span>
+            </div>
           </div>
 
           <div className="mt-6">
@@ -125,23 +143,6 @@ const StrainDetailTemplate = ({ strain }: StrainDetailProps) => {
           </div>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            {strain.availability === 'BULK' && (
-              <div className="w-full sm:w-1/3">
-                <label htmlFor="packSize" className="block text-sm font-medium text-gray-700 mb-1">
-                  Pack Size
-                </label>
-                <select
-                  id="packSize"
-                  value={selectedPackSize}
-                  onChange={handlePackSizeChange}
-                  className="border border-gray-300 rounded-md py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
-                >
-                  <option value="regular">{strain.seedCount} seeds - ${strain.price}</option>
-                  <option value="bulk">{strain.bulkSeedCount} seeds - ${strain.bulkPrice}</option>
-                </select>
-              </div>
-            )}
-
             <div className="w-full sm:w-1/3">
               <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">
                 Quantity

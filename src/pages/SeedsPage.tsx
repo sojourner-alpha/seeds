@@ -152,7 +152,7 @@ const SeedsPage = () => {
       id: 15,
       name: 'Resting Bitch Face X (Open Pollination)',
       image: '/images/strains/rbf-x-op.jpg',
-      price: 20,
+      price: 30,
       category: 'Indica',
       seedCount: 10,
       availability: 'LIMITED'
@@ -161,7 +161,7 @@ const SeedsPage = () => {
       id: 16,
       name: 'Resting Bitch Face X (Blueberry)',
       image: '/images/strains/rbf-x-blueberry.jpg',
-      price: 20,
+      price: 30,
       category: 'Indica',
       seedCount: 10,
       availability: 'LIMITED'
@@ -170,7 +170,7 @@ const SeedsPage = () => {
       id: 17,
       name: 'Resting Bitch Face X (Peach Goblin)',
       image: '/images/strains/rbf-x-peach-goblin.jpg',
-      price: 20,
+      price: 30,
       category: 'Indica',
       seedCount: 10,
       availability: 'LIMITED'
@@ -179,7 +179,7 @@ const SeedsPage = () => {
       id: 18,
       name: 'Resting Bitch Face X (Fizzle Rocks x Candy Jam)',
       image: '/images/strains/rbf-x-fizzle-rocks-candy-jam.jpg',
-      price: 20,
+      price: 30,
       category: 'Indica',
       seedCount: 10,
       availability: 'LIMITED'
@@ -191,8 +191,10 @@ const SeedsPage = () => {
       name: 'Trop Cherry X (Open Pollination)',
       image: '/images/strains/trop-cherry-x-op.jpg',
       price: 20,
+      bulkPrice: 80,
       category: 'Hybrid',
       seedCount: 10,
+      bulkSeedCount: 50,
       availability: 'BULK'
     },
     {
@@ -276,7 +278,6 @@ const SeedsPage = () => {
         {filteredSeeds.map(seed => (
           <div key={seed.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
             <div className="h-48 bg-gray-200">
-              {/* Placeholder for seed image */}
               <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-400">
                 <FaSeedling size={36} />
               </div>
@@ -292,13 +293,24 @@ const SeedsPage = () => {
                   {seed.availability}
                 </span>
               </div>
-              <p className="text-gray-600 text-sm mb-2">{seed.seedCount} seeds per pack</p>
+              
+              {/* Updated pricing display */}
+              {seed.availability === 'BULK' ? (
+                <div className="space-y-1 mb-2">
+                  <p className="text-gray-600 text-sm">• {seed.seedCount} seeds - ${seed.price}</p>
+                  <p className="text-gray-600 text-sm">• {seed.bulkSeedCount} seeds - ${seed.bulkPrice}</p>
+                </div>
+              ) : (
+                <p className="text-gray-600 text-sm mb-2">{seed.seedCount} seeds - ${seed.price}</p>
+              )}
+              
               <div className="flex justify-between items-center mt-4">
                 <span className="text-lg font-bold">
-                  {seed.availability === 'BULK' 
-                    ? `$${seed.price}/${seed.seedCount} seeds or $${seed.bulkPrice}/${seed.bulkSeedCount} seeds`
-                    : `$${seed.price}/${seed.seedCount} seeds`
-                  }
+                  {seed.availability === 'BULK' ? (
+                    <span>From ${seed.price}</span>
+                  ) : (
+                    <span>${seed.price}</span>
+                  )}
                 </span>
                 <Link
                   to={`/seeds/${seed.name.toLowerCase().replace(/[()]/g, '').replace(/\s+/g, '-')}`}
