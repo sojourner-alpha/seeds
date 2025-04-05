@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross combining Trop Cherry X with classic Blueberry genetics. 
-    This variety offers collectors a unique blend of tropical cherry and sweet berry flavors, 
-    creating a truly memorable addition to any collection.`,
+  description: `A limited edition cross combining our prized Trop Cherry ((Tropicana x Grape Pie) x Papaya) female with Blueberry Preserve (blueberry x first light) F4 pollen. 
+    The Trop Cherry selection used in this cross had an amazing pinkish purple color to the buds, much different than the darker purples that are more common,
+    that are sure to please. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/tropicana-cherry/relentless-genetics",
+      text: "More info..."
+    },
   effects: ['Relaxed', 'Happy', 'Euphoric', 'Creative'],
   flavorProfile: ['Cherry', 'Gassy', 'Tropical'],
   growingDifficulty: 'Moderate',

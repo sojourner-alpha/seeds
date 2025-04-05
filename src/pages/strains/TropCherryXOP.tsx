@@ -10,9 +10,15 @@ const strain = {
   seedCount: 10,
   bulkSeedCount: 50,
   availability: 'BULK' as const,
-  description: `The Open Pollination variant of our Trop Cherry X line showcases the diverse genetic potential 
-    of this tropical hybrid. Each seed represents a unique expression of carefully selected Trop Cherry X 
-    parents, offering collectors a range of phenotypes with varying tropical and cherry characteristics.`,
+  description: `The Open Pollination variant of our Trop Cherry ((Tropicana x Grape Pie) x Papaya) line showcases the diverse genetic potential 
+    of this tropical hybrid. This polination included Blueberry, Fizzle Rocks, Fruit of Eden, Hucklberry Mellon, 
+    Peach Goblin, Peach Smash, and Space Gello pollen all mixed together. The Trop Cherry selection used in this 
+    cross had an amazing pinkish purple color to the buds, much different than the darker purples that are more common,
+    that are sure to please.`,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/tropicana-cherry/relentless-genetics",
+      text: "More info..."
+    },
   effects: ['Euphoric', 'Creative', 'Uplifted', 'Social'],
   flavorProfile: ['Tropical', 'Cherry', 'Gassy'],
   growingDifficulty: 'Moderate',

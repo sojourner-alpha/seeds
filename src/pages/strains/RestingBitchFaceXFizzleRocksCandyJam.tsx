@@ -8,9 +8,8 @@ const strain = {
   category: 'Indica',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `An exciting limited edition cross combining Resting Bitch Face X with our Fizzle Rocks x 
-    Candy Jam line. This variety offers collectors a unique blend of RBF's powerful effects with sweet 
-    and fizzy terpenes, creating a truly distinctive addition to the RBF X family.`,
+  description: `An exciting limited edition cross combining our prized Resting Bitch Face (Traingle Kush 91 x Flo White #7) with Fizzle Rocks x Candy Jam pollen. 
+  The Reseting Bitch Face selected for this cross had an extremely gassy terpine profile.`,
   effects: ['Relaxed', 'Happy', 'Pain Relief', 'Euphoric'],
   flavorProfile: ['Gassy', 'Candy', 'Complex'],
   growingDifficulty: 'Moderate to Advanced',

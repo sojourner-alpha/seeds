@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A special cross between Poontang X and our prized Peach Goblin genetics. This limited edition 
-    strain combines the potent effects of Poontang X with the unique peach terps of Goblin, creating a 
-    collector's item that showcases the best of both parent strains.`,
+  description: `A cross made using our prized Poontang Pie ((Tropicana x Grape Pie) x Papaya) female and Peach Goblin (devil Driver x rootbeer) pollen.
+    Poontang Pie is known for its extremely pungent and funky aroma, boasting a truly unique terpene profile that is sure to please,
+    and is amazing hash strain. `,
+  descriptionLink: {
+    url: "https://seedfinder.eu/en/strain-info/poon-tang-pie/oni-seed-co",
+    text: "More info..."
+  },
   effects: ['Euphoric', 'Focused', 'Creative', 'Energetic'],
   flavorProfile: ['Complex', 'Funky', 'Tropical'],
   growingDifficulty: 'Moderate',

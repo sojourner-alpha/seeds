@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross between Trop Cherry X and our prized Peach Goblin genetics. 
-    This variety combines tropical cherry notes with sweet peach terps, creating a collector's item 
-    with an exceptional fruit-forward profile.`,
+  description: `A limited edition cross between our prized Trop Cherry ((Tropicana x Grape Pie) x Papaya) female and Peach Goblin (devil Driver x rootbeer) pollen. 
+    The Trop Cherry selection used in this cross had an amazing pinkish purple color to the buds, much different than the darker purples that are more common,
+    that are sure to please. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/tropicana-cherry/relentless-genetics",
+      text: "More info..."
+    },
   effects: ['Euphoric', 'Happy', 'Creative', 'Uplifted'],
   flavorProfile: ['Gassy', 'Peach', 'Cherry'],
   growingDifficulty: 'Moderate',

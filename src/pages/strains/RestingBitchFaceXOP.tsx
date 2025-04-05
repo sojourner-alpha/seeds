@@ -8,9 +8,9 @@ const strain = {
   category: 'Indica',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `The Open Pollination variant of our Resting Bitch Face X line showcases the full genetic 
-    potential of this powerful indica. Each seed represents a unique expression of carefully selected 
-    RBF X parents, offering collectors a range of phenotypes to explore.`,
+  description: `The Open Pollination variant of our Resting Bitch Face (Traingle Kush 91 x Flo White #7) selection showcases the full genetic 
+    potential of this powerful indica.  The Reseting Bitch Face selected for this cross had an extremely gassy terpine profile. This polination included Blueberry, 
+    Fizzle Rocks, Fruit of Eden, Hucklberry Mellon, Peach Goblin, Peach Smash, and Space Gello pollen all mixed together. `,
   effects: ['Relaxed', 'Sleepy', 'Calm', 'Pain Relief'],
   flavorProfile: ['Gassy', 'Kush', 'Sweet'],
   growingDifficulty: 'Easy to Moderate',

@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross featuring Chimera X and our exotic Space Gello x Zuchi line. 
+  description: `A limited edition cross featuring a Chimera #3 cut and Space Gello x Zuchi pollen. 
     This complex variety combines multiple premium genetics to create a truly unique collector's item 
-    with an intricate terpene profile and exceptional characteristics.`,
+    with an intricate terpene profile and exceptional characteristics. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/chimera-nr3/beleaf-cannabis",
+      text: "More info..."
+    },
   effects: ['Creative', 'Euphoric', 'Energetic', 'Focused'],
   flavorProfile: ['Sweet', 'Tropical', 'Peachy'],
   growingDifficulty: 'Advanced',

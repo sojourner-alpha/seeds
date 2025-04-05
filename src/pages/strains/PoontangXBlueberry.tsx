@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A special limited edition cross combining Poontang X with classic Blueberry genetics. 
-    This variety offers collectors a unique blend of modern potency and classic berry flavors, creating 
-    a truly memorable addition to any collection.`,
+  description: `A special limited edition cross combining our prized Poontang Pie ((Tropicana x Grape Pie) x Papaya) female with Blueberry Preserve (blueberry x first light) F4 pollen. 
+  Poontang Pie is known for its extremely pungent and funky aroma, boasting a truly unique terpene profile that is sure to please,
+    and is amazing hash strain. `,
+  descriptionLink: {
+    url: "https://seedfinder.eu/en/strain-info/poon-tang-pie/oni-seed-co",
+    text: "More info..."
+  },
   effects: ['Relaxed', 'Happy', 'Euphoric', 'Sleepy'],
   flavorProfile: ['Blueberry', 'Complex', 'Funky'],
   growingDifficulty: 'Moderate',

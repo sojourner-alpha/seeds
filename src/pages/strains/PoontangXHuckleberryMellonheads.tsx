@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A special limited edition cross combining Poontang X with our Huckleberry x Mellonheads line. 
-    This variety brings together complex berry notes with the potent characteristics of Poontang X, creating 
-    a unique collector's item with an impressive terpene profile.`,
+  description: `A special limited edition cross combining our prized Poontang Pie ((Tropicana x Grape Pie) x Papaya) female with Huckleberry x Mellonheads pollen. 
+    Poontang Pie is known for its extremely pungent and funky aroma, boasting a truly unique terpene profile that is sure to please,
+    and is amazing hash strain. `,
+  descriptionLink: {
+    url: "https://seedfinder.eu/en/strain-info/poon-tang-pie/oni-seed-co",
+    text: "More info..."
+  },
   effects: ['Relaxed', 'Creative', 'Happy', 'Focused'],
   flavorProfile: ['Funky', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate',

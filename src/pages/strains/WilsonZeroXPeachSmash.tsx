@@ -8,9 +8,8 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross featuring Wilson Zero X and our exceptional Peach Smash genetics. 
-    This variety combines the strength of Wilson Zero X with the sweet, peachy notes of Peach Smash, 
-    creating a unique collector's item with a delightful terpene profile.`,
+  description: `A limited edition cross featuring Wilson Zero (Banana og x Papaya #3) and Peach Smash (tropicana smash mellons x peachquake) pollen. 
+    The Wilson Zero selected for this pollination had great structure and yiled, as well as an amazing banana flavor.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
   flavorProfile: ['Peach', 'Sweet', 'Banana'],
   growingDifficulty: 'Moderate',

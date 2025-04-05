@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A complex three-way cross featuring Trop Cherry X with the exotic Space Gello x Zuchi line. 
-    This limited edition variety brings together multiple premium genetics, creating a unique collector's 
-    item with an intricate tropical and sweet terpene profile.`,
+  description: `A complex three-way cross featuring our prized Trop Cherry ((Tropicana x Grape Pie) x Papaya) female and Space Gello x Zuchi ((Space Runtz x gello) x Zuchi) pollen. 
+   The Trop Cherry selection used in this cross had an amazing pinkish purple color to the buds, much different than the darker purples that are more common,
+    that are sure to please. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/tropicana-cherry/relentless-genetics",
+      text: "More info..."
+    },
   effects: ['Creative', 'Euphoric', 'Energetic', 'Focused'],
   flavorProfile: ['Gassy', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate to Advanced',

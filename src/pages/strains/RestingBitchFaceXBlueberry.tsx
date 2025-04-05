@@ -7,10 +7,9 @@ const strain = {
   price: 30,
   category: 'Indica',
   seedCount: 10,
-  availability: 'LIMITED' as const,
-  description: `A special limited edition cross combining Resting Bitch Face X with classic Blueberry genetics. 
-    This variety offers collectors a unique blend of RBF's potency with sweet berry flavors, creating 
-    a truly memorable addition to any collection.`,
+  availability: 'LIMITED' as const, 
+  description: `A special limited edition cross combining our prized Resting Bitch Face (Traingle Kush 91 x Flo White #7) Female with 
+  Blueberry Preserve (blueberry x first light) F4 pollen. The Reseting Bitch Face selected for this cross had an extremely gassy terpine profile.`,
   effects: ['Relaxed', 'Sleepy', 'Happy', 'Pain Relief'],
   flavorProfile: ['Berry', 'Sweet', 'Gassy'],
   growingDifficulty: 'Moderate',

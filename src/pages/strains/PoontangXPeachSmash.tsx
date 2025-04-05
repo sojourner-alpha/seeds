@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross featuring Poontang X and our exceptional Peach Smash genetics. 
-    This variety combines the potency of Poontang X with the sweet, peachy notes of Peach Smash, creating 
-    a unique collector's item with an impressive terpene profile.`,
+  description: `A limited edition cross featuring our prized Poontang Pie ((Tropicana x Grape Pie) x Papaya) female and Peach Smash (tropicana smash mellons x peachquake) pollen. 
+    Poontang Pie is known for its extremely pungent and funky aroma, boasting a truly unique terpene profile that is sure to please,
+    and is amazing hash strain. `,
+  descriptionLink: {
+    url: "https://seedfinder.eu/en/strain-info/poon-tang-pie/oni-seed-co",
+    text: "More info..."
+  },
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
   flavorProfile: ['Complex', 'Funky', 'Fruity'],
   growingDifficulty: 'Moderate',

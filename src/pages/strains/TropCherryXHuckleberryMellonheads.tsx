@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A special limited edition cross combining Trop Cherry X with our Huckleberry x Mellonheads line. 
-    This variety brings together tropical cherry notes with complex berry flavors, creating a unique 
-    collector's item with an impressive fruit-forward terpene profile.`,
+  description: `A special limited edition cross combining our prized Trop Cherry ((Tropicana x Grape Pie) x Papaya) female with Huckleberry x Mellonheads pollen. 
+    The Trop Cherry selection used in this cross had an amazing pinkish purple color to the buds, much different than the darker purples that are more common,
+    that are sure to please. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/tropicana-cherry/relentless-genetics",
+      text: "More info..."
+    },
   effects: ['Happy', 'Creative', 'Euphoric', 'Social'],
   flavorProfile: ['Cherry', 'Gassy', 'Tropical'],
   growingDifficulty: 'Moderate',

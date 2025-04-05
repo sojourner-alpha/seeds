@@ -8,9 +8,8 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A complex cross combining Wilson Zero X with our Huckleberry x Mellonheads line. 
-    This limited edition variety brings together the potency of Wilson Zero X with sweet berry notes, 
-    creating a unique collector's item with an impressive terpene profile.`,
+  description: `A complex cross combining Wilson Zero (Banana og x Papaya #3) with Huckleberry x Mellonheads pollen. 
+    The Wilson Zero selected for this pollination had great structure and yiled, as well as an amazing banana flavor.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Focused'],
   flavorProfile: ['Banana', 'Sweet', 'Complex'],
   growingDifficulty: 'Moderate',

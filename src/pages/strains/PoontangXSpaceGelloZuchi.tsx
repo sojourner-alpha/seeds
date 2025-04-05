@@ -8,9 +8,13 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A complex three-way cross featuring Poontang X with the exotic Space Gello x Zuchi line. 
-    This limited edition variety brings together multiple premium genetics, creating a unique collector's 
-    item with an intricate terpene profile and impressive characteristics.`,
+  description: `A limited edition cross featuring our prized Poontang Pie ((Tropicana x Grape Pie) x Papaya) female and Space Gello x Zuchi ((Space Runtz x gello) x Zuchi) pollen. 
+    Poontang Pie is known for its extremely pungent and funky aroma, boasting a truly unique terpene profile that is sure to please,
+    and is amazing hash strain. `,
+    descriptionLink: {
+      url: "https://seedfinder.eu/en/strain-info/poon-tang-pie/oni-seed-co",
+      text: "More info..."
+    },
   effects: ['Creative', 'Euphoric', 'Focused', 'Energetic'],
   flavorProfile: ['Funky', 'Tropical', 'Complex'],
   growingDifficulty: 'Moderate to Advanced',

@@ -8,9 +8,8 @@ const strain = {
   category: 'Hybrid',
   seedCount: 10,
   availability: 'LIMITED' as const,
-  description: `A limited edition cross between Wilson Zero X and our prized Peach Goblin genetics. 
-    This variety combines the exceptional potency of Wilson Zero X with the unique peach terps of 
-    Goblin, creating a collector's item that showcases the best of both parent strains.`,
+  description: `A limited edition cross between Wilson Zero (Banana og x Papaya #3) and Peach Goblin (devil Driver x rootbeer) pollen. 
+    The Wilson Zero selected for this pollination had great structure and yiled, as well as an amazing banana flavor.`,
   effects: ['Relaxed', 'Happy', 'Creative', 'Euphoric'],
   flavorProfile: ['Peach', 'Sweet', 'Banana'],
   growingDifficulty: 'Moderate',
